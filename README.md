@@ -8,3 +8,5 @@ This application
 send the androids clipboard information to the windows or linux machine and vice-versa through network.
 
 If anyone is interrested to make this program better, you are welcome!
+
+Need a java developer who can help me to do that as well
