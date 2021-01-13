@@ -8,8 +8,11 @@ s.bind(('192.168.1.89',9989))
 
 print("Waiting for the clients")
 s.listen(2)
+c,addr=s.accept()
+print("Connected with",addr)
+
 while True:
-    c,addr=s.accept()
-    print("Connected with",addr)
-    print(c.recv(1024).decode())
-    p.copy(c.recv(1024).decode())
+    data=c.recv(10000).decode()
+    print(data)
+    p.copy(data)
+
